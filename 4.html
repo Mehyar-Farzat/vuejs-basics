@@ -8,7 +8,8 @@
 <body>
     <div id="app">
 
-        <button v-on:click="myfunc"> Click me </button>
+        <button v-on:click="myfunc1"> Click me </button>
+        <button @click="myfunc2"> Click here </button>
 
     </div>
 
@@ -25,8 +26,12 @@
             },
 
             methods:{
-                myfunc(){
+                myfunc1(){
                     console.log('Vuejs')
+                },
+
+                myfunc2(){
+                    console.log('Python')
                 }
             }
 
