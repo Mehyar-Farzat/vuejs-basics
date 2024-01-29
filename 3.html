@@ -10,6 +10,7 @@
     <div id="app">
         <a v-bind:href="link1">Google</a>
         <a :href="link2">VueJs</a>
+        <input type="text" :value="text">
     </div>
 
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
@@ -22,7 +23,8 @@
                 return{
                     
                     link1: "https://www.google.com",
-                    link2: "https://www.vuejs.org"
+                    link2: "https://www.vuejs.org",
+                    text: 'Mehyar'
                 }
             },
 
